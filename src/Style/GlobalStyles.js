@@ -25,6 +25,38 @@ export const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing:grayscale;
   }
   a{color:inherit}
+
+  .btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: var(--btn-bg);
+    border: 1px solid var(--panel-border);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.15s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+  }
 `;
 
 
